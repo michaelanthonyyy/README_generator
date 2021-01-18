@@ -1,0 +1,19 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "professional readme.md generator for github repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelanthonyyy/README_generator.git"
+  },
+  "author": "michael medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelanthonyyy/README_generator/issues"
+  },
+  "homepage": "https://github.com/michaelanthonyyy/README_generator#readme"
+}
