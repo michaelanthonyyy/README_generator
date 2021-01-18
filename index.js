@@ -50,3 +50,12 @@ inquirer
             name: 'contributing',
         }
     ])
+    .then((data) => {
+        const readMe = 'README1.MD';
+        fs.writeFile(readMe, `
+        
+        
+        
+        
+        `)
+    })
