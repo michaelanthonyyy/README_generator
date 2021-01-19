@@ -25,9 +25,10 @@ inquirer
             name: 'project',
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'What kind of license should your project have?',
             name: 'license',
+            choices: ['MIT License', 'APACHE License 2.0', 'GNU General Public License v3.0']
         },
         {
             type: 'input',
@@ -80,7 +81,7 @@ inquirer
         # How to contribute to repository
         ${data.contributing}
 
-        ## Authors
+        ## Author
 
         - [Link to Github](https://github.com/${data.username})
         - [Email](${data.email})
