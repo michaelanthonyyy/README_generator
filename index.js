@@ -55,39 +55,40 @@ inquirer
         fs.writeFile(readMe, `
         # ${data.name}
 
-## Summary
-${data.project}
-<br>
-<br>
+        ## Summary
+        ${data.project}
+        <br>
+        <br>
 
-## Repository Information
-${data.repoinfo}
-<br>
-<br>
-## Built With
+        ## Repository Information
+        ${data.repoinfo}
+        <br>
+        <br>
 
+        ## What commands are needed to run dependencies
+        ${data.dependencies}
 
+        <br>
+        <br>
 
-<br>
-<br>
+        ## What commands are needed to run tests
+        ${data.tests}
 
-## Deployed Link
+        <br>
+        <br>
 
+        # How to contribute to repository
+        ${data.contributing}
 
-<br>
+        ## Authors
 
-## Authors
+        - [Link to Github](https://github.com/${data.username})
+        - [Email](${data.email})
 
-- [Link to Github](https://github.com/${data.username})
-- [Email](${data.email})
+        <br>
+        <br>
 
-<br>
-<br>
-
-## LICENSES
-${data.license}
-        
-        
-        
-        `)
+        ## LICENSES
+        ${data.license}          
+                `)
     })
