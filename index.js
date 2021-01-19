@@ -1,6 +1,7 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 inquirer
     .prompt([
@@ -53,7 +54,7 @@ inquirer
     ])
     .then((data) => {
         const readMe = 'README1.MD';
-        fs.writeFile(readMe, `
+        writeFileAsync(readMe, `
         # ${data.name}
 
         ## Summary
