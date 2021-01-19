@@ -1,5 +1,5 @@
 const fs = require("fs");
-const util = require ("util");
+const util = require("util");
 const inquirer = require("inquirer");
 
 inquirer
@@ -17,7 +17,7 @@ inquirer
         {
             type: 'input',
             message: 'What is your projects name?',
-            name: 'project',
+            name: 'name',
         },
         {
             type: 'input',
@@ -53,7 +53,39 @@ inquirer
     .then((data) => {
         const readMe = 'README1.MD';
         fs.writeFile(readMe, `
-        
+        # ${data.name}
+
+## Summary
+${data.project}
+<br>
+<br>
+
+## Repository Information
+${data.repoinfo}
+<br>
+<br>
+## Built With
+
+
+
+<br>
+<br>
+
+## Deployed Link
+
+
+<br>
+
+## Authors
+
+- [Link to Github](https://github.com/${data.username})
+- [Email](${data.email})
+
+<br>
+<br>
+
+## LICENSES
+${data.license}
         
         
         
