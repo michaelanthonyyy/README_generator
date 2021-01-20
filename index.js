@@ -27,7 +27,7 @@ inquirer
         },
         {
             type: 'list',
-            message: 'What kind of license should your project have?',
+            message: 'What kind of license does your project use?',
             name: 'license',
             choices: ['MIT License', 'APACHE License 2.0', 'GNU General Public License v3.0']
         },
@@ -55,42 +55,42 @@ inquirer
     .then((data) => {
         const readMe = 'README1.MD';
         writeFileAsync(readMe, `
-        # ${data.name}
+# ${data.name}
 
-        ## Summary
-        ${data.project}
-        <br>
-        <br>
+## Summary
+${data.project}
+<br>
+<br>
 
-        ## Repository Information
-        ${data.repoinfo}
-        <br>
-        <br>
+## Repository Information
+${data.repoinfo}
+<br>
+<br>
 
-        ## What commands are needed to run dependencies
-        ${data.dependencies}
+## What commands are needed to run dependencies
+${data.dependencies}
 
-        <br>
-        <br>
+<br>
+<br>
 
-        ## What commands are needed to run tests
-        ${data.tests}
+## What commands are needed to run tests
+${data.tests}
 
-        <br>
-        <br>
+<br>
+<br>
 
-        # How to contribute to repository
-        ${data.contributing}
+# How to contribute to repository
+${data.contributing}
 
-        ## Author
+## Author
 
-        - [Link to Github](https://github.com/${data.username})
-        - [Email](${data.email})
+- [Link to Github](https://github.com/${data.username})
+- [Email](${data.email})
 
-        <br>
-        <br>
+<br>
+<br>
 
-        ## LICENSES
-        ${data.license}          
-                `)
-    })
+## LICENSES
+${data.license}          
+`)
+})
