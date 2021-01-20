@@ -17,7 +17,7 @@ from user inputs to lists for users to select an option that fits their needs.
 
 ![GIF](Assets/demo.gif)
 
-[Link to Demo Video]()
+[Link to Demo Video](https://github.com/michaelanthonyyy/README_generator/blob/main/Assets/readme_demo.mp4)
 <br>
 <br>
 
