@@ -30,6 +30,56 @@ After the "Inquirer" packages have been installed, readme.md generator can be us
 <br>
 <br>
 
+## Code Snippet
+```javascript
+    .then((data) => {
+        const readMe = 'README1.MD';
+        writeFileAsync(readMe, `
+# ${data.name}
+
+## Summary
+${data.project}
+<br>
+<br>
+
+## Repository Information
+${data.repoinfo}
+<br>
+<br>
+
+## What commands are needed to run dependencies
+${data.dependencies}
+
+<br>
+<br>
+
+## What commands are needed to run tests
+${data.tests}
+
+<br>
+<br>
+
+# How to contribute to repository
+${data.contributing}
+
+## Author
+
+- [Link to Github](https://github.com/${data.username})
+- [Email](${data.email})
+
+<br>
+<br>
+
+## LICENSES
+${data.license}          
+`)
+})
+```
+This code snippet is what creates the layout for the readme.md file that is created through the generator. Every user input or choice of license is then taken from the data object and appended to the appropriate sections.
+
+<br>
+<br>
+
 ## Built Using
 
 * [Node.js](https://nodejs.org/en/)
